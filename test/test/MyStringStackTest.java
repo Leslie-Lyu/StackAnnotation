@@ -89,7 +89,7 @@ public class MyStringStackTest extends TestCase {
         stack.push (s2);
         assertFalse (stack.isEmpty());
         stack.clear ();
-        assertTrue (stack.isEmpty());
+        assertFalse (stack.isEmpty());
         try {
             o1 = stack.pop ();
             fail ();
